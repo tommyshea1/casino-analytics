@@ -89,24 +89,6 @@ Data sourced from [phpn00b/big-casino-data](https://github.com/phpn00b/big-casin
 
 Detailed setup instructions in `/docs/setup_guide.md`
 
-## Sample Queries
-
-```sql
--- Top 10 slot machines by hold percentage
-SELECT TOP 10
-    Slot_Name,
-    Model_Name,
-    Make_Name,
-    SUM(Dollars_Player_Bet) AS Total_Coin_In,
-    SUM(Dollars_Player_Lost) AS Total_Win,
-    SUM(Dollars_Player_Lost) / NULLIF(SUM(Dollars_Player_Bet), 0) * 100 AS Actual_Hold_Pct
-FROM slot_meters
-GROUP BY Slot_Name, Model_Name, Make_Name
-HAVING SUM(Dollars_Player_Bet) > 10000
-ORDER BY Actual_Hold_Pct DESC;
-```
-
-## Dashboard Preview
 
 *Screenshots coming soon*
 
@@ -121,7 +103,7 @@ ORDER BY Actual_Hold_Pct DESC;
 
 ## Author
 
-[Your Name]
+Thomas Shea
 
 ## License
 
