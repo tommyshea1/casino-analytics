@@ -1,0 +1,46 @@
+# Data files (too large for GitHub, keep locally)
+data-raw/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+venv/
+.venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Power BI (keep .pbix but ignore temp files)
+*.pbit
+*.pbix.tmp
+
+# Tableau temp/recovery files
+~*.twbr
+*.twbr
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.user
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# SQL Server
+*.mdf
+*.ldf
+*.bak
