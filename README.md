@@ -105,22 +105,14 @@ HAVING SUM(Dollars_Player_Bet) > 10000
 ORDER BY Actual_Hold_Pct DESC;
 ```
 
-## Dashboard Preview
-
-*Screenshots coming soon*
-
 ## Skills Demonstrated
 
-- [x] Complex SQL queries (CTEs, window functions, aggregations)
+- [x] Complex SQL queries
 - [x] Database design and optimization
 - [x] Tableau dashboard development
 - [x] Data visualization best practices
 - [x] Python data processing
 - [x] Gaming industry domain knowledge
-
-## Author
-
-[Your Name]
 
 ## License
 
