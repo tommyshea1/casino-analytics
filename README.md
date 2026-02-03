@@ -1,6 +1,6 @@
 # Casino Operations Analytics Dashboard
 
-A comprehensive analytics project demonstrating SQL, Power BI, and Python skills using real casino operations data. Built as a portfolio project for casino analyst positions.
+A comprehensive analytics project demonstrating SQL, Tableau, and Python skills using real casino operations data. Built as a portfolio project for casino analyst positions.
 
 ## Project Overview
 
@@ -16,28 +16,9 @@ This project analyzes casino operations data to provide actionable insights acro
 | Tool | Purpose |
 |------|---------|
 | SQL Server | Data warehouse, complex queries |
-| Power BI | Interactive dashboards |
+| Tableau | Interactive dashboards |
 | Python | Data processing, statistical analysis |
-| Git/GitHub | Version control |
 
-## Project Structure
-
-```
-casino-analytics/
-├── sql/
-│   ├── schema/          # Table definitions, indexes
-│   ├── queries/         # Analytical queries
-│   └── views/           # Reusable views for reporting
-├── python/
-│   ├── data_loader.py   # CSV to SQL import scripts
-│   └── analysis/        # Statistical analysis notebooks
-├── powerbi/
-│   └── casino_dashboard.pbix
-├── docs/
-│   └── data_dictionary.md
-├── data-raw/            # Raw CSV data (gitignored)
-└── README.md
-```
 
 ## Data Sources
 
@@ -75,7 +56,7 @@ Data sourced from [phpn00b/big-casino-data](https://github.com/phpn00b/big-casin
 
 ### Prerequisites
 - SQL Server 2019+ (or SQL Server Express)
-- Power BI Desktop
+- Tableau Desktop
 - Python 3.9+
 - Git
 
@@ -89,22 +70,3 @@ Data sourced from [phpn00b/big-casino-data](https://github.com/phpn00b/big-casin
 
 Detailed setup instructions in `/docs/setup_guide.md`
 
-
-*Screenshots coming soon*
-
-## Skills Demonstrated
-
-- [x] Complex SQL queries (CTEs, window functions, aggregations)
-- [x] Database design and optimization
-- [x] Power BI dashboard development
-- [x] Data visualization best practices
-- [x] Python data processing
-- [x] Gaming industry domain knowledge
-
-## Author
-
-Thomas Shea
-
-## License
-
-This project is for educational/portfolio purposes. Data sourced from publicly available datasets.
