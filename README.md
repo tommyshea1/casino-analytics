@@ -19,6 +19,24 @@ This project analyzes casino operations data to provide actionable insights acro
 | Tableau | Interactive dashboards |
 | Python | Data processing, statistical analysis |
 
+## Project Structure
+
+```
+casino-analytics/
+├── sql/
+│   ├── schema/          # Table definitions, indexes
+│   ├── queries/         # Analytical queries
+│   └── views/           # Reusable views for reporting
+├── python/
+│   ├── data_loader.py   # CSV to SQL import scripts
+│   └── analysis/        # Statistical analysis notebooks
+├── tableau/
+│   └── casino_dashboard.twbx
+├── docs/
+│   └── data_dictionary.md
+├── data-raw/            # Raw CSV data (gitignored)
+└── README.md
+```
 
 ## Data Sources
 
@@ -66,7 +84,44 @@ Data sourced from [phpn00b/big-casino-data](https://github.com/phpn00b/big-casin
 2. Download the raw data (see data-raw instructions)
 3. Run the SQL schema scripts
 4. Load data using Python scripts
-5. Open Power BI dashboard and connect to your SQL Server
+5. Open Tableau and connect to your SQL Server (database: CasinoAnalytics)
 
 Detailed setup instructions in `/docs/setup_guide.md`
 
+## Sample Queries
+
+```sql
+-- Top 10 slot machines by hold percentage
+SELECT TOP 10
+    Slot_Name,
+    Model_Name,
+    Make_Name,
+    SUM(Dollars_Player_Bet) AS Total_Coin_In,
+    SUM(Dollars_Player_Lost) AS Total_Win,
+    SUM(Dollars_Player_Lost) / NULLIF(SUM(Dollars_Player_Bet), 0) * 100 AS Actual_Hold_Pct
+FROM slot_meters
+GROUP BY Slot_Name, Model_Name, Make_Name
+HAVING SUM(Dollars_Player_Bet) > 10000
+ORDER BY Actual_Hold_Pct DESC;
+```
+
+## Dashboard Preview
+
+*Screenshots coming soon*
+
+## Skills Demonstrated
+
+- [x] Complex SQL queries (CTEs, window functions, aggregations)
+- [x] Database design and optimization
+- [x] Tableau dashboard development
+- [x] Data visualization best practices
+- [x] Python data processing
+- [x] Gaming industry domain knowledge
+
+## Author
+
+[Your Name]
+
+## License
+
+This project is for educational/portfolio purposes. Data sourced from publicly available datasets.
