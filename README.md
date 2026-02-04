@@ -1,6 +1,6 @@
 # Casino Operations Analytics Dashboard
 
-A comprehensive analytics project demonstrating SQL, Tableau, and Python skills using real casino operations data. Built as a portfolio project for casino analyst positions.
+A comprehensive analytics project demonstrating SQL, Tableau, and Python skills using real international casino operations data. Built as a portfolio project for casino analyst positions.
 
 ## Project Overview
 
@@ -18,25 +18,6 @@ This project analyzes casino operations data to provide actionable insights acro
 | SQL Server | Data warehouse, complex queries |
 | Tableau | Interactive dashboards |
 | Python | Data processing, statistical analysis |
-
-## Project Structure
-
-```
-casino-analytics/
-├── sql/
-│   ├── schema/          # Table definitions, indexes
-│   ├── queries/         # Analytical queries
-│   └── views/           # Reusable views for reporting
-├── python/
-│   ├── data_loader.py   # CSV to SQL import scripts
-│   └── analysis/        # Statistical analysis notebooks
-├── tableau/
-│   └── casino_dashboard.twbx
-├── docs/
-│   └── data_dictionary.md
-├── data-raw/            # Raw CSV data (gitignored)
-└── README.md
-```
 
 ## Data Sources
 
@@ -78,16 +59,6 @@ Data sourced from [phpn00b/big-casino-data](https://github.com/phpn00b/big-casin
 - Python 3.9+
 - Git
 
-### Installation
-
-1. Clone this repository
-2. Download the raw data (see data-raw instructions)
-3. Run the SQL schema scripts
-4. Load data using Python scripts
-5. Open Tableau and connect to your SQL Server (database: CasinoAnalytics)
-
-Detailed setup instructions in `/docs/setup_guide.md`
-
 ## Sample Queries
 
 ```sql
@@ -114,6 +85,3 @@ ORDER BY Actual_Hold_Pct DESC;
 - [x] Python data processing
 - [x] Gaming industry domain knowledge
 
-## License
-
-This project is for educational/portfolio purposes. Data sourced from publicly available datasets.
