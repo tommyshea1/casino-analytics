@@ -85,3 +85,6 @@ ORDER BY Actual_Hold_Pct DESC;
 - [x] Python data processing
 - [x] Gaming industry domain knowledge
 
+
+<img width="988" height="797" alt="dashboardSS" src="https://github.com/user-attachments/assets/2f954f8b-7ac1-4045-a091-cb3417d54223" />
+
