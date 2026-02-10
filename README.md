@@ -76,15 +76,5 @@ HAVING SUM(Dollars_Player_Bet) > 10000
 ORDER BY Actual_Hold_Pct DESC;
 ```
 
-## Skills Demonstrated
-
-- [x] Complex SQL queries
-- [x] Database design and optimization
-- [x] Tableau dashboard development
-- [x] Data visualization best practices
-- [x] Python data processing
-- [x] Gaming industry domain knowledge
-
-
 <img width="988" height="797" alt="dashboardSS" src="https://github.com/user-attachments/assets/2f954f8b-7ac1-4045-a091-cb3417d54223" />
 
